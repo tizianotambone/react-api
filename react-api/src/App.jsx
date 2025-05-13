@@ -30,7 +30,19 @@ function App() {
           </div>
         </div>
       </div>
-     
+       <div className='row gy-3'>
+        {/* ciclo actress tramite map */}
+        {actress.map((actress) => (
+          <div key={`actress-${actress.id}`} className='col-12 col-md-6 col-lg-4'>
+            <div className='card rounded-3'>
+              <div className='actress-img'>
+                <img src={actress.image} alt={actress.name} className='img-fluid' />
+              </div>
+            </div>
+          </div>
+        ))}
+
+      </div>
       
 
     </>
