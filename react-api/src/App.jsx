@@ -36,7 +36,7 @@ function App() {
           <div key={`actress-${actress.id}`} className='col-12 col-md-6 col-lg-3'>
             <div className='card rounded-3'>
               <div className='actress-img'>
-                <img src={actress.image} alt={actress.name} className='img-fluid' />
+                <img src={actress.image} alt={actress.name}  />
               </div>
               <div className='actress-info p-3'>
                 <h3 className='actress-name'>{actress.name}</h3>
@@ -44,7 +44,6 @@ function App() {
                 <p className='actress-nationality'>{actress.nationality}</p>
                 <p className='actress-awards'>{actress.awards}</p>
                 <p className='actress-biography'>{actress.biography}</p>
-                
               </div>
             </div>
           </div>
